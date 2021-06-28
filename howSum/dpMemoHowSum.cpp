@@ -35,5 +35,7 @@ int main(){
     howsum(target,v,dp,result);
     for(int i =0;i<result.size();i++)
         cout<<result[i]<<" ";
+    if(result.size()==0)
+        cout<<"No pattern found";
     cout<<endl;
 }
