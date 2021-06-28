@@ -2,9 +2,9 @@
 #include<vector>
 using namespace std;
 long long dpGridTraveller(int m ,int n , vector<vector<long long>>&v){
-    if(m==1 || n==1)
+    if(m==1 || n==1) // if m or n is 1 definitely there is only one way to reach from m to n
         return 1;
-    if(v[m][n]>0)
+    if(v[m][n]!=0)
         return v[m][n];
     else{
         v[m][n] = dpGridTraveller(m-1,n,v)+dpGridTraveller(m,n-1,v);
