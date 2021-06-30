@@ -5,7 +5,6 @@ using namespace std;
 vector<int> bestSum(vector<int>v ,int targetSum){
     unordered_map<int,vector<int>> dp;
     dp[0] = {};
-
     for(int i =0;i<=targetSum;i++){
         if(dp.find(i)!=dp.end()){
         for(int j =0;j<v.size();j++){
